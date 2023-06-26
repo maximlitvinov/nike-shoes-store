@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+.wrapper{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.navigation{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    flex-wrap: wrap;
+
+    li{
+        font-weight: bold;
+        color: #000;
+    }
+
+}
+.search{
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    background: transparent;
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    color: #000;
+
+}
