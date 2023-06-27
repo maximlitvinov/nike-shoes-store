@@ -1,9 +1,57 @@
-import React from 'react'
+import React from "react";
+import Card from "../../components/card/Card";
+import style from "./Catalog.module.scss";
 
 const Catalog = () => {
-  return (
-    <div>Catalog Page</div>
-  )
-}
 
-export default Catalog
+  const shoes = [
+    {
+      brand: 'Adidas',
+      model: 'Adidas Originals Kiellor',
+      price: '295$',
+      size: '8 - 10',
+      img: 'https://i.postimg.cc/Qd72Qx8F/adidas-Originals-Kiellor-W.jpg'
+    },
+    {
+      brand: 'New Balance',
+      model: 'New Balance Epictrha',
+      price: '255$',
+      size: '8 - 10',
+      img: 'https://i.postimg.cc/dQSpgTD7/New-Balance-Epictrha.jpg'
+    },
+    {
+      brand: 'Nike',
+      model: 'Nike Air Force 1 LX',
+      price: '230$',
+      size: '8 - 10',
+      img: 'https://i.postimg.cc/jdD0j4BQ/Nike-Air-Force-1-07-LX.jpg'
+    },
+    {
+      brand: 'Nike',
+      model: 'Nike Air Jordan 1',
+      price: '275$',
+      size: '8 - 10',
+      img: 'https://i.postimg.cc/kGZHSLLN/Nike-air-jordan-1.jpg'
+    },
+  ]
+
+  return (
+    <div className={style.container}>
+      <div className={style.wrapper}>
+          <h3 className={style.title}>Catalog</h3>
+        <div className={style.button_block}>
+          <button className={style.filter}>Filters</button>
+          <button className={style.sort}>Sort by</button>
+        </div>
+       
+      </div>
+      <div className={style.products}>
+          {shoes.map((element)=>(
+            <Card brand={element.brand} model={element.model} price={element.price} size={element.size} img={element.img}/>
+          ))}
+        </div>
+    </div>
+  );
+};
+
+export default Catalog;

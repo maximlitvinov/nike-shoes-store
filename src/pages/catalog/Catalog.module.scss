@@ -1,0 +1,35 @@
+.container {
+  background-color: #fff;
+  margin: 25px auto;
+  width: 80vw;
+  height: 700px;
+  border: 2px solid #fff;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  .title {
+    text-transform: uppercase;
+    color: #de343d;
+  }
+
+  .filter {
+    justify-self: flex-end;
+  }
+
+  .button_block {
+    margin-top: 25px;
+
+    button {
+      margin-left: 10px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.products {
+  margin: 70px 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

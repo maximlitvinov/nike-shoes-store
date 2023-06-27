@@ -4,18 +4,21 @@
     background-color: #FFFFFF;
 }
 .wrapper{
+    margin: 0 auto;
     display: flex;
-    width: 80%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
 }
 .navigation{
     text-transform: uppercase;
     display: flex;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: space-between;
+    width: 25%;
     flex-wrap: wrap;
 
     li{
+        margin-left: 10px;
+        font-size: 0.7em;
         font-weight: bold;
         color: #000;
     }
@@ -23,7 +26,7 @@
 }
 .search{
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 0.7em;
     font-weight: bold;
     margin-top: 20px;
     border: none;
