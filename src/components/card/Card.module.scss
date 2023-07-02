@@ -1,36 +1,31 @@
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  width: 200px;
-}
-.img{
-    border-radius: 7px;
-}
-.text {
+
+
+.text{
   color: #000;
   line-height: 5px;
-  margin-left: 20px;
   font-size: 0.7em;
-  text-align: start;
+ text-align: start;
 }
-
-.brand{
-    color: grey;
-    font-weight: 600;
+.img {
+    width: 200px;
+    border-radius: 7px;
+  }
+.brand {
+  color: grey;
+  font-weight: 600;
 }
-.model{
-    color:#000;
-    font-size: 1.1em;
-    font-weight: 600;
+.model {
+  color: #000;
+  font-size: 1.1em;
+  font-weight: 600;
 }
-.price{
-    color: #000;
-    font-size: 0.9em;
-    font-weight: 600;
+.price {
+  color: #000;
+  font-size: 0.9em;
+  font-weight: 600;
 }
-.size{
-    color:#de343d;
-    font-size: 1em;
-    font-weight: 700;
+.size {
+  color: #de343d;
+  font-size: 1em;
+  font-weight: 700;
 }

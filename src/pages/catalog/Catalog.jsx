@@ -46,8 +46,8 @@ const Catalog = () => {
        
       </div>
       <div className={style.products}>
-          {shoes.map((element)=>(
-            <Card brand={element.brand} model={element.model} price={element.price} size={element.size} img={element.img}/>
+          {shoes.map((element, index)=>(
+            <Card key={index}brand={element.brand} model={element.model} price={element.price} size={element.size} img={element.img}/>
           ))}
         </div>
     </div>

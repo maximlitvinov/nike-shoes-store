@@ -3,22 +3,17 @@ import { Link } from "react-router-dom";
 import style from "./Nav.module.scss";
 
 const Nav = () => {
+  const nav = ["Home", "Catalog", "Footwear", "Basketball"];
+  const links = ["/", "/catalog", "/footwear", "/basketball"];
   return (
     <div className={style.container}>
       <div className={style.wrapper}>
         <ul className={style.navigation}>
-          <Link to="/">
-            <li>Home</li>
-          </Link>
-          <Link to="/catalog">
-            <li>All Shoes</li>
-          </Link>
-          <Link to="/footwear">
-            <li>FootWear</li>
-          </Link>
-          <Link to="/basketball">
-            <li>Basketball</li>
-          </Link>
+          {nav.map((element) => (
+            <li key={element}>
+              <Link to={element.toLocaleLowerCase()}>{element}</Link>
+            </li>
+          ))}
         </ul>
         <button className={style.search}>🔍︎ Search</button>
       </div>
