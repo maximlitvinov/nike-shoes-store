@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Card from "../../components/card/Card";
 import style from "./Catalog.module.scss";
 
@@ -6,6 +7,7 @@ const Catalog = () => {
 
   const shoes = [
     {
+      id: 1,
       brand: 'Adidas',
       model: 'Adidas Originals Kiellor',
       price: '295$',
@@ -13,6 +15,7 @@ const Catalog = () => {
       img: 'https://i.postimg.cc/Qd72Qx8F/adidas-Originals-Kiellor-W.jpg'
     },
     {
+      id: 2,
       brand: 'New Balance',
       model: 'New Balance Epictrha',
       price: '255$',
@@ -20,6 +23,7 @@ const Catalog = () => {
       img: 'https://i.postimg.cc/dQSpgTD7/New-Balance-Epictrha.jpg'
     },
     {
+      id: 3,
       brand: 'Nike',
       model: 'Nike Air Force 1 LX',
       price: '230$',
@@ -27,6 +31,7 @@ const Catalog = () => {
       img: 'https://i.postimg.cc/jdD0j4BQ/Nike-Air-Force-1-07-LX.jpg'
     },
     {
+      id: 4,
       brand: 'Nike',
       model: 'Nike Air Jordan 1',
       price: '275$',
@@ -47,7 +52,7 @@ const Catalog = () => {
       </div>
       <div className={style.products}>
           {shoes.map((element, index)=>(
-            <Card key={index}brand={element.brand} model={element.model} price={element.price} size={element.size} img={element.img}/>
+           <Link to={`/product`}><Card key={index} brand={element.brand} model={element.model} price={element.price} size={element.size} img={element.img}/></Link> 
           ))}
         </div>
     </div>

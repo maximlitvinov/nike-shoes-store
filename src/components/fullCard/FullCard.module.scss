@@ -1,0 +1,98 @@
+.container {
+    margin-top: 30px;
+    width: 100vw;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 750px;
+    height: 800px;
+  
+    .product__block {
+      display: flex;
+      justify-content: space-between;
+      text-align: start;
+      margin-right: 10px;
+  
+      span {
+        font-weight: 500;
+      }
+  
+      .product__img {
+        border-radius: 15px;
+      }
+      .product__characteristics{
+          margin: 0 auto;
+  
+          button{
+              transition: .2s;
+              border-radius: 15px;
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 1em;
+              width: 200px;
+              height: 50px;
+              color: #de343d;
+              background: transparent;
+          }
+          button:hover{
+              background: #bebebe;
+              color: #383838;
+          }
+      }
+  
+      @media (max-width: 767px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9em;
+        margin-right: 30px;
+  
+        .product__img {
+          width:500px;
+        }
+        .product__characteristics{
+          display: flex;
+          justify-content: space-around;
+  
+          .product__button{
+              margin-bottom: 15px;
+              display: flex;
+              justify-content: flex-end;
+              align-items: flex-end;
+          }
+        }
+      }
+    }
+    .product__info {
+      text-align: start;
+      margin-left: 20px;
+      color: #000;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .product__text {
+      margin: 5px auto;
+      margin-bottom: 20px;
+      text-align: start;
+      width: 800px;
+      color: #000;
+  
+      @media (max-width:768px){
+          margin: 20px 20px;
+          width: 800px;
+          height: 600px;
+          font-size: 4vw;
+      }
+  
+      @media (max-width:576px){
+          font-size: 5vw;
+      }
+    }
+   
+  }
+  

@@ -4,7 +4,6 @@ import style from "./Nav.module.scss";
 
 const Nav = () => {
   const nav = ["Home", "Catalog", "Footwear", "Basketball"];
-  const links = ["/", "/catalog", "/footwear", "/basketball"];
   return (
     <div className={style.container}>
       <div className={style.wrapper}>
